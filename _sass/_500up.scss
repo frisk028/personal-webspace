@@ -1,0 +1,78 @@
+.desktop {
+    display: inline;
+}
+
+header {
+    padding-bottom: 3em;
+}
+
+.image-header {
+    display: table;
+    width: 100%;
+    background-image: url("../old-radio.jpg");
+    background-repeat: no-repeat;
+    top: -2em;
+    overflow: hidden;
+    height: 20em;
+    background-size: 100% auto;
+    opacity: .8;
+    p {
+        font-family: 'Alegreya Sans SC';
+        font-weight: 500;
+        font-size: 3.5em;
+        text-align: center;
+        vertical-align: middle;
+        color: #222;
+        letter-spacing: 3px;
+    }
+}
+
+.logo-mobile {
+    display: none;
+}
+.logo-tablet {
+    display: table-cell;
+}
+
+.resume-section {
+    width: 50%;
+    float: left;
+}
+
+.small {
+    height: 10em;
+}
+
+.large {
+    height: 15em;
+}
+
+.resume {
+    padding-top: 2em;
+}
+
+.site-nav {
+    float: right;
+    margin: auto;
+    padding: 1em;
+    ul {
+        margin: auto;
+    }
+}
+
+.site-footer {
+    padding-top: 0;
+}
+
+.footer-nav {
+    text-align: center;
+    float: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.copyright {
+    padding: .5em 7em;
+}
