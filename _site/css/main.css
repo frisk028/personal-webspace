@@ -77,6 +77,10 @@ ul {
   color: #ffa;
   text-transform: uppercase; }
 
+.light-pink {
+  color: #f99;
+  text-transform: uppercase; }
+
 .plus {
   font-size: 1em; }
 
@@ -86,9 +90,12 @@ ul {
   margin: .5em; }
 
 .logo-mobile {
-  margin-top: .5em; }
-  .logo-mobile img {
-    width: 100%; }
+  margin: 1em auto;
+  text-align: center;
+  font-family: "Alegreya Sans SC";
+  letter-spacing: 3px;
+  font-size: 1.7em;
+  color: #444; }
 
 .desktop {
   display: none; }
@@ -96,7 +103,7 @@ ul {
 .logo-tablet, .logo-desktop {
   display: none; }
 
-.site-header {
+.header {
   background-color: #f99;
   overflow: hidden;
   width: 100%; }
@@ -121,6 +128,16 @@ ul {
       font-size: 1em;
       text-transform: uppercase;
       line-height: 1.5; }
+
+.float {
+  background-color: #f99;
+  width: 100%;
+  z-index: 9999;
+  position: fixed; }
+
+.nav-wrapper {
+  flex: 1 100%;
+  height: 3em; }
 
 .site-footer {
   background-color: #f99;
@@ -158,37 +175,63 @@ ul {
 .wrapper {
   margin: 1em; }
 
+#personal-webspace {
+  background-image: url("personal-webspace.png");
+  background-size: 100% 100%;
+  -webkit-filter: grayscale(85%);
+  text-align: center;
+  display: inline-flex;
+  width: 100%; }
+  #personal-webspace .button {
+    display: inline-block;
+    background-color: #333;
+    margin: auto;
+    color: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px; }
+
 @media screen and (min-width: 500px) {
   .desktop {
     display: inline; }
 
-  header {
-    padding-bottom: 3em; }
+  .header {
+    padding-bottom: 3em;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    height: 28em; }
 
   .image-header {
-    display: table;
+    display: block;
+    flex: 1 100%;
     width: 100%;
-    background-image: url("../old-radio.jpg");
+    height: 23em;
+    top: 4em;
+    background-image: url("winter.jpg");
     background-repeat: no-repeat;
-    top: -2em;
+    background-position: 0% 40%;
     overflow: hidden;
-    height: 20em;
     background-size: 100% auto;
-    opacity: .8; }
-    .image-header p {
-      font-family: 'Alegreya Sans SC';
-      font-weight: 500;
-      font-size: 3.5em;
-      text-align: center;
-      vertical-align: middle;
-      color: #222;
-      letter-spacing: 3px; }
+    opacity: .8;
+    position: absolute;
+    z-index: 1; }
 
   .logo-mobile {
     display: none; }
 
   .logo-tablet {
-    display: table-cell; }
+    display: block;
+    flex: 1 100%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: "Alegreya Sans SC";
+    letter-spacing: 3px;
+    font-size: 2.2em;
+    color: #222;
+    position: relative;
+    z-index: 4; }
 
   .resume-section {
     width: 50%;
@@ -230,7 +273,25 @@ ul {
     display: none; }
 
   .logo-desktop {
-    display: table-cell; }
+    display: block;
+    flex: 1 100%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: "Alegreya Sans SC";
+    letter-spacing: 3px;
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    z-index: 4;
+    font-weight: bold; }
+
+  .header {
+    height: 45em;
+    padding: 0; }
 
   .image-header {
-    height: 30em; } }
+    height: 37em; }
+
+  #personal-webspace {
+    width: 50%; } }

@@ -2,36 +2,45 @@
     display: inline;
 }
 
-header {
+.header {
     padding-bottom: 3em;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    height: 28em;
 }
 
 .image-header {
-    display: table;
+    display: block;
+    flex: 1 100%;
     width: 100%;
-    background-image: url("../old-radio.jpg");
+    height: 23em;
+    top: 4em;
+    background-image: url("winter.jpg");
     background-repeat: no-repeat;
-    top: -2em;
+    background-position: 0% 40%;
     overflow: hidden;
-    height: 20em;
     background-size: 100% auto;
     opacity: .8;
-    p {
-        font-family: 'Alegreya Sans SC';
-        font-weight: 500;
-        font-size: 3.5em;
-        text-align: center;
-        vertical-align: middle;
-        color: #222;
-        letter-spacing: 3px;
-    }
+    position: absolute;
+    z-index: 1;
 }
 
 .logo-mobile {
     display: none;
 }
 .logo-tablet {
-    display: table-cell;
+    display: block;
+    flex: 1 100%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: "Alegreya Sans SC";
+    letter-spacing: 3px;
+    font-size: 2.2em;
+    color: #222;
+    position: relative;
+    z-index: 4;
 }
 
 .resume-section {

@@ -3,8 +3,8 @@ title: Mikhaila Friske
 email: frisk028@umn.edu
 description: > # this means to ignore newlines until "baseurl:"
   Copyright (c) Mikhaila Friske
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/~frisk028" # the subpath of your site, e.g. /blog/
+url: "http://www.tc.umn.edu/~frisk028" # the base hostname & protocol for your site
 twitter_username: friskenation
 github_username:  frisk028
 

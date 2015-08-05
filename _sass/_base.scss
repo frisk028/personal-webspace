@@ -94,6 +94,11 @@ ul {
     text-transform: uppercase;
 }
 
+.light-pink {
+    color: #f99;
+    text-transform: uppercase;
+}
+
 .plus {
     font-size: 1em;
 }
@@ -105,10 +110,12 @@ ul {
 }
 
 .logo-mobile {
-    margin-top: .5em;
-    img {
-        width: 100%;
-    }
+    margin: 1em auto;
+    text-align: center;
+    font-family: "Alegreya Sans SC";
+    letter-spacing: 3px;
+    font-size: 1.7em;
+    color: #444;  
 }
 
 .desktop {
@@ -119,7 +126,7 @@ ul {
     display: none;
 }
 
-.site-header {
+.header {
     background-color: #f99;
     overflow: hidden;
     width: 100%;
@@ -148,6 +155,18 @@ ul {
             line-height: $base-line-height;
         }
     }
+}
+
+.float {
+    background-color: #f99;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+}
+
+.nav-wrapper {
+    flex: 1 100%;
+    height: 3em;
 }
 
 .site-footer {
@@ -194,5 +213,23 @@ ul {
 
 .wrapper {
     margin: 1em;
+}
+
+#personal-webspace {
+    background-image: url("personal-webspace.png");
+    background-size: 100% 100%;
+    -webkit-filter: grayscale(85%);
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    .button {
+        display: inline-block;
+        background-color: #333;
+        margin: auto;
+        color: white;
+        padding: 1em;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
 }
 

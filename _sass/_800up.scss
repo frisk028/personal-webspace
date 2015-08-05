@@ -5,9 +5,29 @@
     display: none;
 }
 .logo-desktop {
-	display: table-cell;
+	display: block;
+    flex: 1 100%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: "Alegreya Sans SC";
+    letter-spacing: 3px;
+    font-size: 3em;
+    color: #222;
+    position: relative;
+    z-index: 4;
+    font-weight: bold;
+}
+
+.header {
+	height: 45em;
+	padding: 0;
 }
 
 .image-header {
-	height: 30em;
+	height: 37em;
+}
+
+#personal-webspace {
+	width: 50%;
 }
