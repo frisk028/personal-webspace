@@ -6,28 +6,39 @@
 }
 .logo-desktop {
 	display: block;
-    flex: 1 100%;
-    text-align: center;
     margin: auto;
     width: 100%;
     font-family: "Alegreya Sans SC";
     letter-spacing: 3px;
     font-size: 3em;
     color: #222;
-    position: relative;
-    z-index: 4;
+    position: absolute;
     font-weight: bold;
+    top: 6em;
+    z-index: 4;
 }
 
 .header {
-	height: 45em;
+	height: 42em;
 	padding: 0;
 }
 
-.image-header {
-	height: 37em;
+.project-section {
+	width: 50%;
+	float: left;
 }
 
-#personal-webspace {
-	width: 50%;
+.button {
+    display: none;
+}
+
+.project-section:hover {
+    .button {
+        display: inline;
+        opacity: .8;
+    }
+}
+
+#projects {
+	overflow: auto;
 }

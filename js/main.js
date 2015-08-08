@@ -5,9 +5,9 @@ $(document).ready(function () {
 	});
 
 	function fixProject() {
-		var div = $('#personal-webspace');
+		var div = $('.project-section');
 		var width = div.width();
-		var height = (2*width)/3;
+		var height = width/2;
 
 		div.css('height', height);
 	}
